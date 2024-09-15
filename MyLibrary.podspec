@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MyLibrary'
-  s.version = '4.2.3'
+  s.version = '4.2.4'
   s.summary = 'MyLibrary'
   s.description = s.summary
   s.license = 'Backbase License'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     test_spec.exclude_files = 'Tests/Info.plist'
     test_spec.resources = 'TestResources/**/*'
 
-    test_spec.dependency 'RxNimble', '>= 5.0'
+    s.dependency 'RxNimble', '>= 5.0'
     test_spec.dependency 'RxNimble/RxTest', '>= 5.0'
     test_spec.dependency 'Quick', '~> 5.0'
     test_spec.dependency 'SnapshotTesting', '~> 1.8'
