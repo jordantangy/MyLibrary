@@ -68,6 +68,5 @@ Pod::Spec.new do |s|
 #    app_spec.pod_target_xcconfig = {
 #      'PRODUCT_MODULE_NAME' => 'Pockets Journey'
 #    }
-  end
 end
 
