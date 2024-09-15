@@ -6,7 +6,7 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -137,7 +137,7 @@ Pod::Spec.new do |s|
    # ――― Dependencies ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-s.test_spec 'Tests' do |test_spec|
+spec.test_spec 'Tests' do |test_spec|
 
 test_spec.source_files = 'Tests/**/*'
 
@@ -145,7 +145,7 @@ test_spec.exclude_files = 'Tests/Info.plist'
 
 test_spec.resources = 'TestResources/**/*'
 
-s.dependency 'Alamofire', '~> 5.4'
+spec.dependency 'Alamofire', '~> 5.4'
 
 
 
