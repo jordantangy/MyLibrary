@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MyLibrary'
-  s.version = '4.2.0'
+  s.version = '4.2.1'
   s.summary = 'MyLibrary'
   s.description = s.summary
   s.license = 'Backbase License'
@@ -68,5 +68,4 @@ Pod::Spec.new do |s|
 #    app_spec.pod_target_xcconfig = {
 #      'PRODUCT_MODULE_NAME' => 'Pockets Journey'
 #    }
-end
 
