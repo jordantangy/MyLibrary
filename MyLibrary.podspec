@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MyLibrary'
-  s.version = '4.2.2'
+  s.version = '4.2.3'
   s.summary = 'MyLibrary'
   s.description = s.summary
   s.license = 'Backbase License'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author = 'Backbase B.V.'
 
   s.platform = :ios
-  s.ios.deployment_target = '15.0'
+  s.ios.deployment_target = '10.0'
   s.scheme = { :code_coverage => false }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
