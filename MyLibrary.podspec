@@ -1,166 +1,73 @@
-#
-#  Be sure to run `pod spec lint MyLibrary.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
-Pod::Spec.new do |spec|
-
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
-  spec.name         = "MyLibrary"
-  spec.version      = "3.0.0"
-  spec.summary      = "A short description of MyLibrary."
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
-
-  spec.homepage     = "http://EXAMPLE/MyLibrary"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+Pod::Spec.new do |s|
+  s.name = 'MyLibrary'
+  s.version = '4.2.0'
+  s.summary = 'MyLibrary'
+  s.description = s.summary
+  s.license = 'Backbase License'
+  s.homepage = 'http://www.backbase.com/home'
+  s.author = 'Backbase B.V.'
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
-  spec.author             = { "jordantangy" => "jordantangy@gmai.com" }
-  # Or just: spec.author    = "jordantangy"
-  # spec.authors            = { "jordantangy" => "jordantangy@gmai.com" }
-  # spec.social_media_url   = "https://twitter.com/jordantangy"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-  # spec.visionos.deployment_target = "1.0"
+  s.platform = :ios
+  s.ios.deployment_target = '15.0'
+  s.scheme = { :code_coverage => false }
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  spec.source       = { :git => "http://EXAMPLE/MyLibrary.git", :tag => "#{spec.version}" }
-
-#testing
+  s.source = { git: 'https://github.com/jordantangy/MyLibrary.git' }
+  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
 
 
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  # ――― Assets ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # spec.requires_arc = true
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-   # ――― Dependencies ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-
-spec.test_spec 'Tests' do |test_spec|
-
-test_spec.source_files = 'Tests/**/*'
-
-test_spec.exclude_files = 'Tests/Info.plist'
-
-test_spec.resources = 'TestResources/**/*'
-
-spec.dependency 'Alamofire', '~> 5.4'
+  # ――― Dependencies ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 
 
-test_spec.dependency 'AFNetworking', '~> 2.7.0'
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/**/*'
+    test_spec.exclude_files = 'Tests/Info.plist'
+    test_spec.resources = 'TestResources/**/*'
 
-#test_spec.dependency 'RxNimble', '~> 4.7'
 
-#test_spec.dependency 'RxNimble/RxTest', '~> 4.7'
+    test_spec.dependency 'RxNimble', '>= 5.0'
+    test_spec.dependency 'RxNimble/RxTest', '>= 5.0'
+    test_spec.dependency 'Quick', '~> 5.0'
+    test_spec.scheme = {
+      :code_coverage => true
+    }
+  end
 
-#test_spec.dependency 'Quick', '~> 5.0'
 
-test_spec.scheme = {
 
-:code_coverage => true
 
-}
+#    test_spec.requires_app_host = true
+#    test_spec.app_host_name = 'RetailPocketsJourney/App'
+#    test_spec.dependency 'RetailPocketsJourney/App'
+
+
+    test_spec.dependency 'RxNimble', '~> 4.7'
+    test_spec.dependency 'RxNimble/RxTest', '~> 4.7'
+    test_spec.dependency 'Quick', '~> 5.0'
+    test_spec.dependency 'SnapshotTesting', '~> 1.8'
+    test_spec.scheme = {
+      :code_coverage => true
+    }
+  end
+
+
+    test_spec.dependency 'RxNimble/RxTest', '~> 4.7' # RxTest
+    test_spec.dependency 'Quick', '~> 5.0'
+    test_spec.scheme = {
+      :code_coverage => true
+    }
+  end
+
+#    app_spec.pod_target_xcconfig = {
+#      'PRODUCT_MODULE_NAME' => 'Pockets Journey'
+#    }
+  end
 end
-end
+
