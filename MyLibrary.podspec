@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author = 'Backbase B.V.'
 
   s.platform = :ios
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '11.0'
   s.scheme = { :code_coverage => false }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
