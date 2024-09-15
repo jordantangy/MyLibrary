@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source = { git: 'https://github.com/jordantangy/MyLibrary.git' }
 
-  s.dependency 'Backbase', '>= 12.0'
+  s.dependency 'SnapshotTesting', '>= 1.9.0'
 
 
   # ――― Test Specification ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
